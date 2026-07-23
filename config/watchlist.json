@@ -1,0 +1,14 @@
+{
+  "stocks": [
+    {"name": "沪电股份", "stockCode": "002463", "exchange": "SZ"},
+    {"name": "胜宏科技", "stockCode": "300476", "exchange": "SZ"},
+    {"name": "澜起科技", "stockCode": "688008", "exchange": "SH"},
+    {"name": "天孚通信", "stockCode": "300394", "exchange": "SZ"},
+    {"name": "深科技", "stockCode": "000021", "exchange": "SZ"},
+    {"name": "北京君正", "stockCode": "300223", "exchange": "SZ"},
+    {"name": "中芯国际", "stockCode": "688981", "exchange": "SH"}
+  ],
+  "analysisQuery": "请查询沪电股份、胜宏科技、澜起科技、天孚通信、深科技、北京君正、中芯国际今天截至当前时点的分时行情、小时线、成交量和成交额，并按股票分别列出。",
+  "snapshotRetentionTradingDays": 90
+}
+

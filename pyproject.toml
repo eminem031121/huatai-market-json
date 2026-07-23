@@ -1,0 +1,30 @@
+[project]
+name = "huatai-pages-market-json"
+version = "0.1.0"
+description = "Publish Huatai A-share quotes as GPT-readable JSON on GitHub Pages."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "exchange-calendars>=4.7,<5",
+    "requests>=2.32,<3",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.3,<9",
+]
+
+[project.scripts]
+refresh-market-json = "market_json.app:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/market_json"]
+
+[tool.pytest.ini_options]
+addopts = "-q"
+testpaths = ["tests"]
+

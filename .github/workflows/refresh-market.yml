@@ -1,0 +1,77 @@
+name: Refresh Huatai market JSON
+
+on:
+  schedule:
+    # 14:27, 14:31 and 14:36 Asia/Shanghai (UTC+8), Monday-Friday.
+    - cron: "27,31,36 6 * * 1-5"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: huatai-market-refresh
+  cancel-in-progress: false
+
+jobs:
+  refresh-and-deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Check out default branch
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v6
+        with:
+          enable-cache: true
+
+      - name: Install Python
+        run: uv python install 3.12
+
+      - name: Install locked dependencies
+        run: uv sync --frozen
+
+      - name: Fetch Huatai data
+        id: fetch
+        continue-on-error: true
+        env:
+          HT_APIKEY: ${{ secrets.HT_APIKEY }}
+          PUBLIC_BASE_URL: ${{ vars.PUBLIC_BASE_URL }}
+        run: uv run refresh-market-json --output public
+
+      - name: Persist generated JSON
+        env:
+          DEFAULT_BRANCH: ${{ github.event.repository.default_branch }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add public
+          if ! git diff --cached --quiet; then
+            git commit -m "data: refresh market JSON [skip ci]"
+            git push origin HEAD:${DEFAULT_BRANCH}
+          fi
+
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: public
+
+      - name: Deploy GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+
+      - name: Mark incomplete quote refresh as failed
+        if: steps.fetch.outcome == 'failure'
+        run: |
+          echo "The status JSON was published, but latest.json was not overwritten."
+          exit 1

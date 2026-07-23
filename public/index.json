@@ -1,0 +1,7 @@
+{
+  "schemaVersion": "1.0",
+  "service": "huatai-pages-market-json",
+  "status": "not_initialized",
+  "message": "Run the refresh workflow once to generate market data."
+}
+
