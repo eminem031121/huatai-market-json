@@ -1,7 +1,49 @@
 {
   "schemaVersion": "1.0",
   "service": "huatai-pages-market-json",
-  "status": "not_initialized",
-  "message": "Run the refresh workflow once to generate market data."
+  "updatedAt": "2026-07-23T11:19:00.239473+08:00",
+  "timezone": "Asia/Shanghai",
+  "endpoints": {
+    "latest": "https://eminem031121.github.io/huatai-market-json/latest.json",
+    "status": "https://eminem031121.github.io/huatai-market-json/status.json",
+    "openapi": "https://eminem031121.github.io/huatai-market-json/openapi.yaml",
+    "snapshots": "https://eminem031121.github.io/huatai-market-json/snapshots/"
+  },
+  "watchlist": [
+    {
+      "stockName": "沪电股份",
+      "stockCode": "002463",
+      "exchange": "SZ"
+    },
+    {
+      "stockName": "胜宏科技",
+      "stockCode": "300476",
+      "exchange": "SZ"
+    },
+    {
+      "stockName": "澜起科技",
+      "stockCode": "688008",
+      "exchange": "SH"
+    },
+    {
+      "stockName": "天孚通信",
+      "stockCode": "300394",
+      "exchange": "SZ"
+    },
+    {
+      "stockName": "深科技",
+      "stockCode": "000021",
+      "exchange": "SZ"
+    },
+    {
+      "stockName": "北京君正",
+      "stockCode": "300223",
+      "exchange": "SZ"
+    },
+    {
+      "stockName": "中芯国际",
+      "stockCode": "688981",
+      "exchange": "SH"
+    }
+  ]
 }
-

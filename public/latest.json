@@ -1,0 +1,117 @@
+{
+  "schemaVersion": "1.0",
+  "status": "ok",
+  "asOf": "2026-07-23T11:19:00.239473+08:00",
+  "marketDate": "2026-07-23",
+  "timezone": "Asia/Shanghai",
+  "source": {
+    "provider": "Huatai Securities",
+    "structuredTool": "a-share-paper-trading.getQuote",
+    "analysisTool": "query-indicator.queryIndicator"
+  },
+  "quotes": [
+    {
+      "stockName": "沪电股份",
+      "currentPrice": 114.31,
+      "prevClose": 114.23,
+      "limitUp": 125.65,
+      "limitDown": 102.81,
+      "bidPrice1": 114.31,
+      "askPrice1": 114.32,
+      "change": 0.07,
+      "isSuspended": false,
+      "stockCode": "002463",
+      "exchange": "SZ",
+      "changePctCalculated": 0.07
+    },
+    {
+      "stockName": "胜宏科技",
+      "currentPrice": 240.47,
+      "prevClose": 240.4,
+      "limitUp": 288.48,
+      "limitDown": 192.32,
+      "bidPrice1": 240.1,
+      "askPrice1": 240.46,
+      "change": 0.03,
+      "isSuspended": false,
+      "stockCode": "300476",
+      "exchange": "SZ",
+      "changePctCalculated": 0.0291
+    },
+    {
+      "stockName": "澜起科技",
+      "currentPrice": 224.18,
+      "prevClose": 223.0,
+      "limitUp": 267.6,
+      "limitDown": 178.4,
+      "bidPrice1": 224.16,
+      "askPrice1": 224.22,
+      "change": 0.53,
+      "isSuspended": false,
+      "stockCode": "688008",
+      "exchange": "SH",
+      "changePctCalculated": 0.5291
+    },
+    {
+      "stockName": "天孚通信",
+      "currentPrice": 214.31,
+      "prevClose": 217.63,
+      "limitUp": 261.16,
+      "limitDown": 174.1,
+      "bidPrice1": 214.23,
+      "askPrice1": 214.36,
+      "change": -1.53,
+      "isSuspended": false,
+      "stockCode": "300394",
+      "exchange": "SZ",
+      "changePctCalculated": -1.5255
+    },
+    {
+      "stockName": "深科技",
+      "currentPrice": 38.88,
+      "prevClose": 40.22,
+      "limitUp": 44.24,
+      "limitDown": 36.2,
+      "bidPrice1": 38.87,
+      "askPrice1": 38.88,
+      "change": -3.33,
+      "isSuspended": false,
+      "stockCode": "000021",
+      "exchange": "SZ",
+      "changePctCalculated": -3.3317
+    },
+    {
+      "stockName": "北京君正",
+      "currentPrice": 151.63,
+      "prevClose": 157.82,
+      "limitUp": 189.38,
+      "limitDown": 126.26,
+      "bidPrice1": 151.61,
+      "askPrice1": 151.63,
+      "change": -3.92,
+      "isSuspended": false,
+      "stockCode": "300223",
+      "exchange": "SZ",
+      "changePctCalculated": -3.9222
+    },
+    {
+      "stockName": "中芯国际",
+      "currentPrice": 145.73,
+      "prevClose": 155.59,
+      "limitUp": 186.71,
+      "limitDown": 124.47,
+      "bidPrice1": 145.66,
+      "askPrice1": 145.72,
+      "change": -6.34,
+      "isSuspended": false,
+      "stockCode": "688981",
+      "exchange": "SH",
+      "changePctCalculated": -6.3372
+    }
+  ],
+  "analysis": {
+    "query": "请查询沪电股份、胜宏科技、澜起科技、天孚通信、深科技、北京君正、中芯国际今天截至当前时点的分时行情、小时线、成交量和成交额，并按股票分别列出。",
+    "answerMarkdown": "已为您查询到相关数据。以下是各股票今日截至当前的行情概览：\n\n### 沪电股份（002463）\n- **分时行情**：已生成实时分时走势图，可直观查看日内价格波动轨迹与均价线关系。\n- **成交量/成交额**：当前累计成交量与成交额数据已更新，反映早盘资金参与热度。\n\n### 胜宏科技（300476）\n- **分时行情**：分时图显示日内多空博弈节奏，价格围绕均价线运行态势清晰。\n- **成交量/成交额**：量能配合情况已呈现，可观察放量或缩量时段对应的价格变化。\n\n### 澜起科技（688008）\n- **分时行情**：科创板标的分时走势已加载，体现高弹性特征下的日内波动结构。\n- **成交量/成交额**：成交活跃度数据完备，便于分析主力资金动向与散户情绪共振点。\n\n### 天孚通信（300394）\n- **分时行情**：光模块龙头分时形态完整，价格重心移动方向与板块联动性可同步验证。\n- **成交量/成交额**：量价匹配度良好，关键时点的量能放大对趋势延续具有参考意义。\n\n### 深科技（000021）\n- **分时行情**：存储封测标的一天内价格路径已绘制，支撑压力位可通过分时高低点识别。\n- **成交量/成交额**：换手水平适中，成交分布均匀与否可辅助判断筹码稳定性。\n\n### 北京君正（300223）\n- **分时行情**：芯片设计企业分时曲线平滑度较高，异常脉冲式波动较少，走势相对稳健。\n- **成交量/成交额**：量能释放节奏有序，未出现明显断崖式缩量或突兀巨量，流动性健康。\n\n### 中芯国际（688981）\n- **分时行情**：晶圆代工龙头分时图展现大盘蓝筹特性，波动幅度较窄但承接力较强。\n- **成交量/成交额**：作为科创50权重股，其成交额占比较高，对市场整体情绪有风向标作用。\n\n> 注：以上所有股票的**小时线K线图**亦已同步生成，包含每根小时K线的开盘价、收盘价、最高价、最低价及对应成交量柱状图，可用于更精细的日内波段分析。如需调取具体某只股票的小时级技术指标（如MACD、RSI等），可进一步指定查询。",
+    "error": null
+  }
+}

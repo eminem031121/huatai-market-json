@@ -1,0 +1,30 @@
+openapi: 3.1.0
+info:
+  title: Huatai A-share Market JSON
+  version: "1.0"
+  description: Read-only market snapshots for the configured seven-stock watchlist.
+servers:
+  - url: https://eminem031121.github.io/huatai-market-json
+paths:
+  /latest.json:
+    get:
+      operationId: getLatestMarketSnapshot
+      summary: Get the latest complete Huatai quote snapshot
+      responses:
+        "200":
+          description: Latest snapshot JSON
+          content:
+            application/json:
+              schema:
+                type: object
+  /status.json:
+    get:
+      operationId: getMarketRefreshStatus
+      summary: Get the most recent refresh status
+      responses:
+        "200":
+          description: Refresh status JSON
+          content:
+            application/json:
+              schema:
+                type: object
