@@ -1,10 +1,10 @@
 {
   "schemaVersion": "1.0",
   "state": "ok",
-  "attemptedAt": "2026-08-06T17:20:26.980481+08:00",
-  "marketDate": "2026-08-06",
-  "latestSuccessAt": "2026-08-06T17:20:26.980481+08:00",
+  "attemptedAt": "2026-08-07T15:50:54.840158+08:00",
+  "marketDate": "2026-08-07",
+  "latestSuccessAt": "2026-08-07T15:50:54.840158+08:00",
   "quoteCount": 7,
-  "snapshot": "snapshots/2026-08-06/172026.json",
+  "snapshot": "snapshots/2026-08-07/155054.json",
   "analysisError": null
 }
