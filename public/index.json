@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.0",
   "service": "huatai-pages-market-json",
-  "updatedAt": "2026-08-25T15:23:48.472728+08:00",
+  "updatedAt": "2026-08-26T15:24:02.619450+08:00",
   "timezone": "Asia/Shanghai",
   "endpoints": {
     "latest": "https://eminem031121.github.io/huatai-market-json/latest.json",
