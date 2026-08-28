@@ -1,10 +1,8 @@
 {
   "schemaVersion": "1.0",
-  "state": "ok",
-  "attemptedAt": "2026-08-28T01:46:06.799787+08:00",
-  "marketDate": "2026-08-28",
+  "state": "market_closed",
+  "attemptedAt": "2026-08-29T02:53:30.851266+08:00",
+  "marketDate": "2026-08-29",
   "latestSuccessAt": "2026-08-28T01:46:06.799787+08:00",
-  "quoteCount": 7,
-  "snapshot": "snapshots/2026-08-28/014606.json",
-  "analysisError": null
+  "message": "A 股休市，未抓取且未覆盖 latest.json。"
 }
