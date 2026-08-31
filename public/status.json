@@ -1,8 +1,13 @@
 {
   "schemaVersion": "1.0",
-  "state": "market_closed",
-  "attemptedAt": "2026-08-29T02:53:30.851266+08:00",
-  "marketDate": "2026-08-29",
+  "state": "failed",
+  "attemptedAt": "2026-08-31T22:14:17.054945+08:00",
+  "marketDate": "2026-08-31",
   "latestSuccessAt": "2026-08-28T01:46:06.799787+08:00",
-  "message": "A 股休市，未抓取且未覆盖 latest.json。"
+  "quoteCount": 6,
+  "errors": [
+    "北京君正: 行情查询失败",
+    "analysis: 接口调用超时"
+  ],
+  "message": "本次结构化行情不完整，未覆盖 latest.json。"
 }
