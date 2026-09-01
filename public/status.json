@@ -1,13 +1,10 @@
 {
   "schemaVersion": "1.0",
-  "state": "failed",
-  "attemptedAt": "2026-08-31T22:14:17.054945+08:00",
-  "marketDate": "2026-08-31",
-  "latestSuccessAt": "2026-08-28T01:46:06.799787+08:00",
-  "quoteCount": 6,
-  "errors": [
-    "北京君正: 行情查询失败",
-    "analysis: 接口调用超时"
-  ],
-  "message": "本次结构化行情不完整，未覆盖 latest.json。"
+  "state": "ok",
+  "attemptedAt": "2026-09-01T19:52:42.449512+08:00",
+  "marketDate": "2026-09-01",
+  "latestSuccessAt": "2026-09-01T19:52:42.449512+08:00",
+  "quoteCount": 7,
+  "snapshot": "snapshots/2026-09-01/195242.json",
+  "analysisError": null
 }
