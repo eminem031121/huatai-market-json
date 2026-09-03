@@ -1,10 +1,10 @@
 {
   "schemaVersion": "1.0",
-  "state": "ok_with_analysis_error",
-  "attemptedAt": "2026-09-02T19:33:47.813810+08:00",
-  "marketDate": "2026-09-02",
-  "latestSuccessAt": "2026-09-02T19:33:47.813810+08:00",
+  "state": "ok",
+  "attemptedAt": "2026-09-03T19:29:51.637278+08:00",
+  "marketDate": "2026-09-03",
+  "latestSuccessAt": "2026-09-03T19:29:51.637278+08:00",
   "quoteCount": 7,
-  "snapshot": "snapshots/2026-09-02/193347.json",
-  "analysisError": "接口调用超时"
+  "snapshot": "snapshots/2026-09-03/192951.json",
+  "analysisError": null
 }
